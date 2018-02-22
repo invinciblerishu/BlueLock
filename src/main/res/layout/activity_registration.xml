@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/register">
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/submain"
+        >
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Login Registration"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/lockid"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:focusable="true"
+            android:hint="Lock Id"
+            android:maxLength="6"
+            android:textColorHighlight="#ff7eff15"
+
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockid"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:hint="Password"
+            android:textSize="15dp"
+            android:maxLength="8"
+            android:textColorHighlight="#ff7eff15"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:textSize="15dp"
+            android:hint="Confirm Pass"
+            android:maxLength="8"
+            android:textColorHighlight="#ff7eff15"
+            android:inputType="textPassword"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/submain1"
+        android:layout_toRightOf="@+id/submain"
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#A9A9A9"/>
+        <TextView
+            android:id="@+id/heading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="App Lock"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/lockpasstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:text="Lock Pin"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockpasstext"
+            android:layout_marginLeft="50dp"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockpasstext"
+            android:layout_toRightOf="@+id/one"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+
+            />
+
+        <EditText
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockpasstext"
+            android:layout_toRightOf="@+id/two"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+
+
+            />
+
+        <EditText
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockpasstext"
+            android:layout_toRightOf="@+id/three"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+
+            />
+
+        <TextView
+            android:id="@+id/lockconfirmpasstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/four"
+            android:text="Confirm Lock Pin"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/one1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockconfirmpasstext"
+            android:layout_marginLeft="50dp"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/two2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockconfirmpasstext"
+            android:layout_toRightOf="@+id/one"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+
+            />
+
+        <EditText
+            android:id="@+id/three3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockconfirmpasstext"
+            android:layout_toRightOf="@+id/two"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+
+
+            />
+
+        <EditText
+            android:id="@+id/four4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lockconfirmpasstext"
+            android:layout_toRightOf="@+id/three"
+            android:hint="X"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submain"
+        android:layout_marginLeft="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Register" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/buttonregister"
+        android:text="Secondary User"/>
+</RelativeLayout> 

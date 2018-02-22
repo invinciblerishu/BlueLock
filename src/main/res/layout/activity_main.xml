@@ -1,0 +1,147 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+
+
+
+    <EditText
+        android:id="@+id/loginid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+
+        android:focusable="true"
+        android:hint="Login ID"
+        android:maxLength="6"
+        android:textColorHighlight="#ff7eff15"
+        android:padding="10dp"
+        android:textColorHint="#293635" />
+
+
+    <EditText
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginid"
+        android:layout_marginLeft="65dp"
+        android:hint="X"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginid"
+        android:layout_toRightOf="@+id/one"
+        android:hint="X"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:padding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginid"
+        android:layout_toRightOf="@+id/two"
+        android:hint="X"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:padding="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginid"
+        android:layout_toRightOf="@+id/three"
+        android:hint="X"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:padding="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Lock/Unlock" />
+
+    <Button
+        android:id="@+id/buttonkillswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/four"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/buttonlogin"
+        android:text="KILL SWITCH" />
+
+    <Button
+        android:id="@+id/buttonrecauth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsendauth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Receive Authentication"
+
+
+        />
+
+    <Button
+        android:id="@+id/buttonsendauth"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Send Authentication"
+
+
+        />
+
+    <Button
+        android:id="@+id/buttonregistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:text="Registration"
+
+        />
+
+    <Button
+        android:id="@+id/buttongetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_alignParentRight="true"
+        android:text="Get Password"
+
+
+        />
+
+</RelativeLayout>
